@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f4f3 !important;
+  color: #555;
+}
+.logo {
+  width: 100px !important;
+}
+#menuSala .opcionActivaMenu {
+  background: #333;
+  color: #fff;
+}
+
+.container {
+  max-width: 100% !important;
+}
+.custom_Conteiner {
+  background-color: #ffffff !important;
+  border-radius: 8px;
+  border: 1px solid #e6ebf2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  float: none !important;
+  padding: 50px 15px;
+  overflow: hidden;
+}
+label {
+  float: left !important;
+}
+.mt-100 {
+  margin-top: 100px !important;
+}
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+.fixed-top {
+  background-color: #fff !important;
+  box-shadow: 0 4px 32px 0 rgba(10, 14, 29, 0.02),
+    0 8px 64px 0 rgba(10, 14, 29, 0.08);
+  box-shadow: 0px 15px 60px rgba(62, 62, 62, 0.102) !important;
+  box-shadow: 0 0 1px 1px rgba(29, 17, 51, 0.04),
+    0 0 3px 2px rgba(9, 32, 77, 0.12), 0 0 2px -3px rgba(29, 17, 51, 0.12);
+}
+.navbar-light .navbar-toggler {
+  border-color: #fff !important;
+}
+.quitar-margin-left-defaul {
+  padding-left: 0px !important;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+#btn-eliminar-reserva {
+  color: #333;
+  padding: 5px;
+  background: #fff;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 1;
+}
+
+.modal-title {
+  line-height: 1 !important;
+  text-align: center !important;
+}
+h1 {
+  text-align: center;
+  color: #666;
+}
+h3 {
+  font-size: 24px !important;
+  /*border-bottom: 1px solid #d7d7d7;*/
+}
+
+/**Toggle status*/
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before,
+.toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #56c080;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 30px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
